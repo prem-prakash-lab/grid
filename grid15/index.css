@@ -1,0 +1,35 @@
+body{ font-family: arial,helvetica; }
+    h1{ padding: 0 0 0 40px; }
+
+    .container{
+      background: wheat;
+      width:650px;
+      margin: 50px auto 0;
+
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,150px);
+      grid-gap:10px;
+
+    }
+
+    .item1{ background: orangered; }
+    .item2{ background: yellowgreen;}
+    .item3{ background: MEDIUMPURPLE;
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+     }
+
+     .item3 > div{
+       background: #fff;
+       color:red;
+       padding: 10px;
+     }
+
+    .item4{ background: hotpink; }
+    .item5{ background: royalblue;}
+    .item6{ background: goldenrod;}
+
+    .items{ color: #fff;font-size: 20px;font-weight: bold;padding: 10px;}
